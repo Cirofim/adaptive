@@ -3,10 +3,10 @@
 .wrapper_bottom{
   max-width: 1024px;
   margin: 0 auto;
-   padding: 0 24px;
+   padding: 0 0 0 24px ;
    display: flex;
    gap: 11px;
-   
+  
 }
 
 @media(max-width:1024px){
@@ -14,6 +14,14 @@
     flex-wrap: wrap;
   }
 }
+
+@media(max-width:479px){
+  .wrapper_bottom{
+    padding: 0;
+  }
+}
+
+
 
 .wrapper_navigation{
 display: flex;
@@ -21,24 +29,11 @@ display: flex;
 }
 
 
+
 @media(max-width:1024px){
   .wrapper_navigation{
     flex-wrap: wrap;
-  }
-}
 
-@media(max-width:363px){
-  .navigation_text{
-    padding: 0;
-
-  }
-}
-
-
-@media(max-width:363px){
-  .wrapper_bottom{
-    flex-wrap: wrap;
-    padding: 0;
   }
 }
 
@@ -51,11 +46,34 @@ display: flex;
 
 .navigation_text{
   font-size: 16px;
-  padding:  6px 10px;
+  padding:  6px 14px 6px 14px;
   white-space: nowrap;
   color: var( --txt-grey);
 
+}
 
+@media(max-width:830px){
+ .navigation_text{
+    padding: 6px 14px 6px 0;
+  }
+}
+
+.trait_text{
+  padding: 6px 0;
+}
+
+@media(max-width:830px){
+ .trait_text{
+    padding: 6px 14px 6px 0;
+  }
+}
+
+.padding-none{
+  padding: 0;
+}
+
+.padding-text--left{
+  padding: 6px 10px 6px 0;
 }
 
 .navigation_text:hover{
@@ -67,4 +85,11 @@ transition: color 0.3s ease-in-out;
 .wrapper_navigation-bottom{
   display: flex;
   gap: 8px;
+  padding:  6px 14px;
+}
+
+@media(max-width:830px){
+ .wrapper_navigation-bottom{
+    padding: 6px 14px 6px 0;
+  }
 }

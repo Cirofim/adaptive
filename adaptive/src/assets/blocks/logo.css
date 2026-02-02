@@ -1,46 +1,95 @@
-.header_container{
+.header_container {
   max-width: 64rem;
-  margin: 0 auto 22px ;
+  /*Тут тоже на марджин не работает rem*/
+  margin: 0 auto 22px;
   display: flex;
   justify-content: space-between;
   padding: 16px 24px;
-  border-bottom: 1px solid #E5E5E7 ;
-
+  border-bottom: 1px solid var(--border_bottom);
 }
 
-.logo{
-  width:220px ;
+.wrapper_logo-burger {
+  display: flex;
+}
+
+@media(max-width:832px) {
+  .header_container {
+    margin: 0 0 45px 0;
+  }
+}
+/*Тут rem не работает на Лого*/
+.logo {
+  width: 220px;
   height: 51px;
   background: var(--bc);
 }
 
-.wrapper_logo{
+.burger_button {
+  display: none;
+}
+
+@media(max-width:832px) {
+  .burger_button {
+    display: block;
+  }
+}
+
+@media(max-width:832px) {
+  .wrapper_logo-burger {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:432px) {
+  .wrapper_logo-burger {
+    gap: 72px;
+  }
+}
+
+@media(max-width:432px) {
+  .logo {
+    min-width: 164px;
+    height: 51px;
+  }
+}
+
+.wrapper_logo {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
 }
 
-@media(max-width:832px){
-.wrapper_logo{
-  display: none;
-}
+@media(max-width:832px) {
+  .wrapper_logo {
+    display: none;
+  }
 }
 
-.logo_text{
+.logo_text {
   color: var(--txt-grey);
-  font-size: 16px;
+  font-size: 1rem;
 }
-.logo_text:hover{
+
+.logo_text:hover {
   color: var(--primary);
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
 
-.big_text{
+.big_text {
+  /*Тут тоже rem не работает*/
   padding: 14px 24px;
   border: 1px solid var(--txt-black);
   color: var(--txt-black);
   border-radius: 0.5rem;
 
+}
+
+.burger_button {
+  padding: 14px;
+  border: 1px solid var(--txt-black);
+  border-radius: 8px;
+  cursor: pointer;
 }
