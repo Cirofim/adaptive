@@ -1,10 +1,9 @@
 .header_container {
   max-width: 64rem;
-  /*Тут тоже на марджин не работает rem*/
-  margin: 0 auto 22px;
+  margin: 0 auto 1.375rem;
   display: flex;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--border_bottom);
 }
 
@@ -17,10 +16,10 @@
     margin: 0 0 45px 0;
   }
 }
-/*Тут rem не работает на Лого*/
+
 .logo {
-  width: 220px;
-  height: 51px;
+  width: 13.75rem;
+  height: 3.5rem;
   background: var(--bc);
 }
 
@@ -38,11 +37,6 @@
   .wrapper_logo-burger {
     width: 100%;
     justify-content: space-between;
-  }
-}
-
-@media(max-width:432px) {
-  .wrapper_logo-burger {
     gap: 72px;
   }
 }
@@ -79,8 +73,8 @@
 }
 
 .big_text {
-  /*Тут тоже rem не работает*/
-  padding: 14px 24px;
+
+  padding: 0.875rem 1.5rem;
   border: 1px solid var(--txt-black);
   color: var(--txt-black);
   border-radius: 0.5rem;
@@ -88,8 +82,8 @@
 }
 
 .burger_button {
-  padding: 14px;
+  padding: 0.875rem;
   border: 1px solid var(--txt-black);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
