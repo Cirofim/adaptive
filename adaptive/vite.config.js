@@ -15,4 +15,19 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+
+
+  plugins: [vue()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Укажите путь к вашему файлу переменных
+        additionalData: `@use "@/assets/global/variables.scss" as *;`
+      }
+    }
+  }
 })
+  
+
+
+

@@ -1,4 +1,8 @@
-<script></script>
+<script>
+</script>
+
+
+
 <template>
   <header>
     <div class="header_container">
@@ -49,15 +53,16 @@
         </a>
       </div>
       <div class="wrapper_navigation-bottom">
-        <div class="navigation_text padding-none">Сохранить вариант</div>
+        <div class="navigation_text-pn ">Сохранить вариант</div>
         <img class="grey_like" src="@/assets/icons/grey_like.svg" alt="" />
       </div>
     </div>
   </header>
 </template>
 
-<style>
-@import url(./assets/blocks/logo.css);
-@import url(./assets/global/style.css);
-@import url(./assets/blocks/navigation.css);
+<style lang="scss" scoped>
+@import url(./assets/blocks/logo.scss);
+@import url(./assets/global/style.scss);
+@import url(./assets/blocks/navigation.scss);
+
 </style>
