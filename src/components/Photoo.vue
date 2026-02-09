@@ -1,20 +1,24 @@
 <script setup></script>
 
 <template>
-  <div class="containerImg">
-    <div class="upWrapp">
-      <img class="bigImg" src="../assets/img/house.png" alt="" />
-      <img class="firstSmall" src="../assets/img/house(2).png" alt="" />
-      <img class="secondSmall" src="../assets/img/house(3).png" alt="" />
-      <div class="wrapperBtn">
-        <div class="textBtn">Показать все фото</div>
-        <img class="iconBtn" src="../assets/icons/image.svg" alt="" />
+  <div :class="$style.containerImg">
+    <div :class="$style.upWrapp">
+      <img :class="$style.bigImg" src="../assets/img/house.png" alt="" />
+      <img :class="$style.firstSmall" src="../assets/img/house(2).png" alt="" />
+      <img
+        :class="$style.secondSmall"
+        src="../assets/img/house(3).png"
+        alt=""
+      />
+      <div :class="$style.wrapperBtn">
+        <div :class="$style.textBtn">Показать все фото</div>
+        <img :class="$style.iconBtn" src="../assets/icons/image.svg" alt="" />
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" module>
 .containerImg {
   margin: 0 auto;
   width: 64rem;
@@ -53,7 +57,7 @@
     }
     .secondSmall {
       @media (max-width: 786px) {
-       min-width: 584px;
+        min-width: 584px;
         flex-shrink: 0;
         max-width: none;
       }

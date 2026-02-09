@@ -1,7 +1,7 @@
 <script setup>
-import logo from "@/components/logo.vue";
+import logo from "@/components/Logo.vue";
 import navigation from "@/components/navigation.vue";
-import photoo from "./components/photoo.vue"
+import photoo from "./components/Photoo.vue";
 </script>
 
 <template>
@@ -11,13 +11,13 @@ import photoo from "./components/photoo.vue"
   </header>
 
   <main>
-    <photoo/>
-
-
+    <photoo />
   </main>
-
 </template>
 
-<style lang="scss">
-@import url(./assets/global/style.scss);
+<style lang="scss" module>
+header {
+  width: 64rem;
+  margin: 0 auto;
+}
 </style>
