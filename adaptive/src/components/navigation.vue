@@ -30,7 +30,7 @@
 
 .bottomWr {
   max-width: 64rem;
-  margin: 0 auto;
+  margin: 0 auto 1.375rem;
   padding: 0 0 0 1.5rem;
   display: flex;
   gap: 0.75rem;
