@@ -1,90 +1,68 @@
 <script setup></script>
 
 <template>
-  <div :class="$style.containerImg">
-    <div :class="$style.upWrapp">
-      <img :class="$style.bigImg" src="../assets/img/house.png" alt="" />
-      <img :class="$style.firstSmall" src="../assets/img/house(2).png" alt="" />
-      <img
-        :class="$style.secondSmall"
-        src="../assets/img/house(3).png"
-        alt=""
-      />
-      <div :class="$style.wrapperBtn">
-        <div :class="$style.textBtn">Показать все фото</div>
-        <img :class="$style.iconBtn" src="../assets/icons/image.svg" alt="" />
+  <div :class="$style.container">
+    <div :class="$style.wrapper">
+      <img :class="$style.big" src="../assets/img/house.png" alt="" />
+      <img :class="$style.small" src="../assets/img/house(2).png" alt="" />
+      <img :class="$style.small" src="../assets/img/house(3).png" alt="" />
+      <div :class="$style.button">
+        <div :class="$style.text">Показать все фото</div>
+        <img :class="$style.icon" src="../assets/icons/image.svg" alt="" />
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" module>
-.containerImg {
- display: flex;
- flex-wrap: wrap;
-  
+.container {
+  display: flex;
+  flex-wrap: wrap;
 
-  @media(max-width:900px){
-
+  @media (max-width: 900px) {
   }
- 
 
-  .upWrapp {
+  .wrapper {
     width: 64rem;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px 26px;
-   
+    gap: 1.5rem 1.625rem;
 
     @media (max-width: 900px) {
-     position: fixed;
-     display: flex;
-     gap: 0.5rem;
-     overflow-x: scroll;
-     scroll-snap-type: x mandatory;
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
     }
 
-    .bigImg {
+    .big {
       grid-column: 1/2;
       grid-row: 1/3;
-
+      scroll-snap-align: start;
       @media (max-width: 900px) {
-        width: 320px;
-        height: 236px;
-        scroll-snap-align: center;
-        max-width: none;
-        
+        width: 20rem;
+        height: 14.75rem;
       }
     }
 
-    .firstSmall {
+    .small {
       @media (max-width: 900px) {
-        
-        width: 320px;
-        height: 236px;
-        max-width: none;
-       scroll-snap-align: center;
-      }
-    }
-    .secondSmall {
-      @media (max-width: 900px) {
-        width: 320px;
-        height: 236px;
-        max-width: none;
-       scroll-snap-align: center;
+        scroll-snap-align: start;
+        width: 20rem;
+        height: 14.75rem;
       }
     }
   }
 
-  .wrapperBtn {
-    padding: 14px 24px;
+  .button {
+    padding: 0.875rem 1.5rem;
     display: flex;
     gap: 0.5rem;
     background: #ffffffcc;
     position: absolute;
-    bottom: 18px;
-    right: 24px;
+    bottom: 1.125rem;
+    right: 1.5rem;
     z-index: 2;
     border-radius: 0.5rem;
 

@@ -15,7 +15,4 @@ import photoo from "./components/Photoo.vue";
   </main>
 </template>
 
-<style lang="scss" module>
-
-
-</style>
+<style lang="scss" module></style>

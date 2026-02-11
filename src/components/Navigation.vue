@@ -27,30 +27,22 @@
 </template>
 
 <style lang="scss" module>
-
-
 .wrapper {
-  padding: 0 0 0 24px;
+  padding: 0 0 0 1.5rem;
   margin: 0 auto 1.375rem;
   display: flex;
   gap: 0.75rem;
-  
 
   @media (max-width: 1024px) {
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0 0 0 1rem;
   }
 
   .navigation {
     display: flex;
-     
-     
-     
-
 
     .link {
       display: flex;
-      
 
       .text {
         font-size: 1rem;
@@ -90,16 +82,13 @@
 
   .right {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     padding: 0.375rem 0.875rem;
     cursor: pointer;
     color: $grey-txt;
 
-    
-
     .pn {
       padding: 0;
-      
     }
 
     @media (max-width: 830px) {
