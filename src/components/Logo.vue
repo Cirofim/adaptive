@@ -31,6 +31,7 @@
 
 <style lang="scss" module>
 .header {
+    
   margin: 0 auto 1.375rem;
   display: flex;
   justify-content: space-between;

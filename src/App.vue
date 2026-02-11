@@ -16,8 +16,6 @@ import photoo from "./components/Photoo.vue";
 </template>
 
 <style lang="scss" module>
-header {
-  width: 64rem;
-  margin: 0 auto;
-}
+
+
 </style>

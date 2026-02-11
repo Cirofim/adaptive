@@ -2,7 +2,7 @@
 
 <template>
   <div :class="$style.wrapper">
-    <div :class="$style.navigationWr">
+    <div :class="$style.navigation">
       <a href="" :class="$style.link">
         <div :class="$style.text">Посуточная аренда</div>
       </a>
@@ -27,22 +27,30 @@
 </template>
 
 <style lang="scss" module>
+
+
 .wrapper {
+  padding: 0 0 0 24px;
   margin: 0 auto 1.375rem;
-  padding: 0 0 0 1.5rem;
   display: flex;
   gap: 0.75rem;
+  
 
   @media (max-width: 1024px) {
     flex-wrap: wrap;
     padding: 0;
   }
 
-  .navigationWr {
+  .navigation {
     display: flex;
+     
+     
+     
+
 
     .link {
       display: flex;
+      
 
       .text {
         font-size: 1rem;
@@ -87,8 +95,11 @@
     cursor: pointer;
     color: $grey-txt;
 
+    
+
     .pn {
       padding: 0;
+      
     }
 
     @media (max-width: 830px) {
