@@ -20,29 +20,29 @@
 
 <style lang="scss" module>
 .containerImg {
- 
+ display: flex;
+ flex-wrap: wrap;
   
 
   @media(max-width:900px){
-    left: -92px;
+
   }
  
 
   .upWrapp {
+    width: 64rem;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px 26px;
-    overflow: visible;
-    min-width: none;
-    
+   
 
     @media (max-width: 900px) {
-     
-      gap: 16px;
-      position: absolute;
-      display: flex;
-      
+     position: fixed;
+     display: flex;
+     gap: 0.5rem;
+     overflow-x: scroll;
+     scroll-snap-type: x mandatory;
     }
 
     .bigImg {
@@ -50,9 +50,9 @@
       grid-row: 1/3;
 
       @media (max-width: 900px) {
-        min-width: 584px;
-        height: 320px0;
-        flex-shrink: 0;
+        width: 320px;
+        height: 236px;
+        scroll-snap-align: center;
         max-width: none;
         
       }
@@ -60,16 +60,19 @@
 
     .firstSmall {
       @media (max-width: 900px) {
-        min-width: 584px;
-        flex-shrink: 0;
+        
+        width: 320px;
+        height: 236px;
         max-width: none;
+       scroll-snap-align: center;
       }
     }
     .secondSmall {
       @media (max-width: 900px) {
-        min-width: 584px;
-        flex-shrink: 0;
+        width: 320px;
+        height: 236px;
         max-width: none;
+       scroll-snap-align: center;
       }
     }
   }
