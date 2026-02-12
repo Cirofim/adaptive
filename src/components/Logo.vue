@@ -4,7 +4,7 @@
   <div :class="$style.header">
     <div :class="$style.burger">
       <div :class="$style.logo">LOGO</div>
-      <img :class="$style.button" src="../assets/icons/burger.svg" alt="" />
+      <img :class="$style.button" src="@/assets/icons/burger.svg" alt="" />
     </div>
     <div :class="$style.wrapper">
       <div :class="$style.text">Искать жильё</div>

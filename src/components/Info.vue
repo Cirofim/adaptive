@@ -8,15 +8,15 @@
       <p :class="$style.address">Комсомольская ул, 21, Барановичи, Брестская область</p>
       <div :class="$style.icons">
         <div :class="$style.icon">
-          <img src="../assets/icons/icon-room.svg" alt="" />
+          <img src="@/assets/icons/icon-room.svg" alt="" />
           <div :class="$style.house">2 комн.</div>
         </div>
         <div :class="$style.icon">
-          <img src="../assets/icons/icon-meters.svg" alt="" />
+          <img src="@/assets/icons/icon-meters.svg" alt="" />
           <div :class="$style.house">52 м²</div>
         </div>
         <div :class="$style.icon">
-          <img src="../assets/icons/icon-floor.svg" alt="" />
+          <img src="@/assets/icons/icon-floor.svg" alt="" />
           <div :class="$style.house">3 этаж</div>
         </div>
       </div>
@@ -42,17 +42,17 @@
 <style lang="scss" module>
 .container {
   .wrapper{
-    max-width: 642px;
+    max-width: 40.125rem;
     margin: 0 1.5rem;
 
     .blue{
-      font-size: 16px;
-      color: #3B82F6;
-      background: #DBEAFE;
+      font-size: 1rem;
+      color: $blue-text-info;
+      background: $background-text-blue;
       display: inline-block;
       margin: 0 0 1.5rem 0;
       font-weight: 400;
-      padding: 2px 0.5rem;
+      padding: 0.125rem 0.5rem;
     }
 
     .address{
@@ -76,24 +76,24 @@
 
         .house{
           padding:  0.5rem 0;
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 500;
         }
 
         img{
-          background: #F2F2F4;
-          border-radius: 10px;
-          padding: 4px;
-          width: 34px;
-          height: 34px;
+          background: $background-color;
+          border-radius: 0.625rem;
+          padding: 0.25rem;
+          width: 2.125rem;
+          height: 2.125rem;
         }
       }
     }
   }
 .services{
   .facilities{
-    font-size: 18px;
-    color: #000000;
+    font-size: 1.125rem;
+    color: $black-text;
     font-weight: 500;
   }
   .description{
@@ -106,9 +106,9 @@
       flex-wrap: wrap;
     }
     .texxt{
-      padding: 2px 0.5rem;
-      background: #F2F2F4;
-      border-radius: 6px;
+      padding: 0.125rem 0.5rem;
+      background: $background-color;
+      border-radius: 0.375rem;
       font-weight: 400;
     }
 

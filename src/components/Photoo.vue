@@ -3,12 +3,12 @@
 <template>
   <div :class="$style.container">
     <div :class="$style.wrapper">
-      <img :class="$style.big" src="../assets/img/house.png" alt="" />
-      <img :class="$style.small" src="../assets/img/house(2).png" alt="" />
-      <img :class="$style.small" src="../assets/img/house(3).png" alt="" />
+      <img :class="$style.big" src="@/assets/img/house.png" alt="" />
+      <img :class="$style.small" src="@/assets/img/house(2).png" alt="" />
+      <img :class="$style.small" src="@/assets/img/house(3).png" alt="" />
       <div :class="$style.button">
         <div :class="$style.text">Показать все фото</div>
-        <img :class="$style.icon" src="../assets/icons/image.svg" alt="" />
+        <img :class="$style.icon" src="@/assets/icons/image.svg" alt="" />
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
     padding: 0.875rem 1.5rem;
     display: flex;
     gap: 0.5rem;
-    background: #ffffffcc;
+    background: $button-photo;
     position: absolute;
     bottom: 1.125rem;
     right: 1.5rem;
