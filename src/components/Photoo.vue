@@ -18,9 +18,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-
-  @media (max-width: 900px) {
-  }
+  margin: 0 0 1.75rem 0;
 
   .wrapper {
     width: 64rem;

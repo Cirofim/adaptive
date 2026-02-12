@@ -2,6 +2,7 @@
 import logo from "@/components/Logo.vue";
 import navigation from "@/components/navigation.vue";
 import photoo from "./components/Photoo.vue";
+import Info from "./components/Info.vue"
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import photoo from "./components/Photoo.vue";
 
   <main>
     <photoo />
+    <Info/>
   </main>
 </template>
 
