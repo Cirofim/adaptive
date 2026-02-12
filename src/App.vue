@@ -14,6 +14,7 @@ import Info from "./components/Info.vue"
   <main>
     <photoo />
     <Info/>
+    
   </main>
 </template>
 
