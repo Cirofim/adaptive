@@ -4,7 +4,7 @@
   <div :class="$style.header">
     <div :class="$style.burger">
       <div :class="$style.logo">LOGO</div>
-      <img :class="$style.button" src="@/assets/icons/burger.svg" alt="" />
+      <img :class="$style.button" src="/public/icons/burger.svg" alt="" />
     </div>
     <div :class="$style.wrapper">
       <div :class="$style.text">Искать жильё</div>
@@ -14,14 +14,14 @@
         :class="$style.icon"
         width="24"
         height="24"
-        src="@/assets/icons/bell.svg"
+        src="/public/icons/bell.svg"
         alt="bell"
       />
       <img
         :class="$style.icon"
         width="24"
         height="24"
-        src="@/assets/icons/like.svg"
+        src="/public/icons/like.svg"
         alt="like"
       />
       <div :class="$style.big">Мой аккаунт</div>
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid $bottom-border;
+  border-bottom: 0.125rem solid $bottom-border;
 
   @media (max-width: 832px) {
     margin: 0 0 2.875rem 0;
@@ -63,7 +63,7 @@
 
     .button {
       padding: 0.875rem;
-      border: 1px solid $black-txt;
+      border: 0.125rem solid $black-txt;
       border-radius: 0.5rem;
       cursor: pointer;
       display: none;
@@ -97,7 +97,7 @@
 
     .big {
       padding: 0.875rem 1.5rem;
-      border: 1px solid $black-txt;
+      border: 0.125rem solid $black-txt;
       color: $black-txt;
       border-radius: 0.5rem;
       cursor: pointer;

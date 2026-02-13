@@ -21,7 +21,7 @@
     </div>
     <div :class="$style.right">
       <div :class="$style.pn">Сохранить вариант</div>
-      <img :class="$style.grey" src="@/assets/icons/grey-like.svg" alt="" />
+      <img :class="$style.grey" src="/public/icons/grey-like.svg" alt="" />
     </div>
   </div>
 </template>

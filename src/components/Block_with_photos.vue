@@ -4,20 +4,20 @@
   <div :class="$style.container">
     <div :class="$style.wrapper">
       <div :class="$style.big">
-        <img src="@/assets/img/house.png" alt="" />
+        <img src="/public/img/picture-about-house_1/house.png" alt="" />
       </div>
 
       <div :class="$style.small">
-        <img src="@/assets/img/house(2).png" alt="" />
+        <img src="/public/img/picture-about-house_1/house(2).png" alt="" />
       </div>
 
       <div :class="$style.small">
-        <img src="@/assets/img/house(3).png" alt="" />
+        <img src="/public/img/picture-about-house_1/house(3).png" alt="" />
       </div>
 
       <div :class="$style.button">
         <div :class="$style.text">Показать все фото</div>
-        <img :class="$style.icon" src="@/assets/icons/image.svg" alt="" />
+        <img :class="$style.icon" src="/public/icons/image.svg" alt="" />
       </div>
     </div>
   </div>

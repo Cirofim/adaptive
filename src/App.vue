@@ -1,8 +1,8 @@
 <script setup>
-import logo from "@/components/Logo.vue";
-import navigation from "@/components/navigation.vue";
-import photoo from "./components/Photoo.vue";
-import Info from "./components/Info.vue"
+import logo from "@/components/Top_logo.vue";
+import navigation from "@/components/Low_logo.vue";
+import photoo from "./components/Block_with_photos.vue";
+import Info from "./components/Descrption_about_room.vue"
 </script>
 
 <template>

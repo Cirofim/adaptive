@@ -1,13 +1,29 @@
-<script >
-export default{
-  data(){
-    return  {
-      text:[ "Бесплатный Wi-Fi", "Телевизор","Кондиционер","Рабочая зона","Фен","Душевая кабина","Вид из окна","Комплект полотенец","Водонагреватель","Утюг"]
-    }
-  }
-  
-}
-
+<script>
+export default {
+  data() {
+    return {
+      text: [
+        "Бесплатный Wi-Fi",
+        "Телевизор",
+        "Кондиционер",
+        "Рабочая зона",
+        "Фен",
+        "Душевая кабина",
+        "Вид из окна",
+        "Комплект полотенец",
+        "Водонагреватель",
+        "Утюг",
+      ],
+      swag: [{ id: 1, url: "/icons/icon-room.svg", title: "Локальное фото 1" }],
+      swag_1: [
+        { id: 2, url: "/icons/icon-meters.svg", title: "Локальное фото 2" },
+      ],
+      swag_2: [
+        { id: 3, url: "/icons/icon-floor.svg", title: "Локальное фото 3" },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
@@ -19,22 +35,34 @@ export default{
       </p>
       <div :class="$style.icons">
         <div :class="$style.icon">
-          <img src="@/assets/icons/icon-room.svg" alt="" />
+          <img src="/public/icons/icon-room.svg" alt="" />
           <div :class="$style.house">2 комн.</div>
         </div>
         <div :class="$style.icon">
-          <img src="@/assets/icons/icon-meters.svg" alt="" />
+          <img
+            v-for="img in swag"
+            :key="2"
+            src="/public/icons/icon-meters.svg"
+            alt=""
+          />
           <div :class="$style.house">52 м²</div>
         </div>
         <div :class="$style.icon">
-          <img src="@/assets/icons/icon-floor.svg" alt="" />
+          <img
+            v-for="img in swag"
+            :key="3"
+            src="/public/icons/icon-floor.svg"
+            alt=""
+          />
           <div :class="$style.house">3 этаж</div>
         </div>
       </div>
       <div :class="$style.services">
         <p :class="$style.facilities">Основные удобства</p>
         <div :class="$style.description">
-          <div :class="$style.texxt" v-for="(text, index) in text" v-bind:key="index">{{text}}</div>
+          <div :class="$style.texxt" v-for="(text, index) in text" :key="index">
+            {{ text }}
+          </div>
         </div>
       </div>
     </div>
